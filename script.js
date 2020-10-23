@@ -3,12 +3,13 @@ var i = 0;
 function clicked(me) {
   if(!me.innerText) {
     me.innerText = current;
-    document.getElementById("t").innerText = "Current turn: " + current;
     if (current == "o") {
       current = "x";
+      document.getElementById("t").innerText = "Current turn: X"
     }
     else {
       current = "o";
+      document.getElementById("t").innerText = "Current turn: O"
     }
   }
 }
